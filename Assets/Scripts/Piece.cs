@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RedPiece : MonoBehaviour
+public class Piece : MonoBehaviour
 {
-    int Color = 2;
+    public int Color;
 }
