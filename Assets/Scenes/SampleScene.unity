@@ -477,6 +477,7 @@ MonoBehaviour:
   - {fileID: 7882753722158598454, guid: 8f352ad4cda583b4d8b6647a4c655da3, type: 3}
   - {fileID: 5981278655509450079, guid: 3a829861e4e848e4b98f033861fb23d0, type: 3}
   - {fileID: 6027353697256675902, guid: 2db5a9422c0f57e48a19387d7a0ef1dd, type: 3}
+  - {fileID: 314338325263948088, guid: 006c2a983d661a84abb751d89bb848a4, type: 3}
 --- !u!114 &1867798795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -490,13 +491,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: a4246a3c38df0194292b1e53cfc45e1c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -526,14 +527,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
+    m_Left: 64
+    m_Right: 40
+    m_Top: 20
     m_Bottom: 0
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 1
-  m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 15, y: 10}
+  m_CellSize: {x: 85, y: 85}
+  m_Spacing: {x: 37.1, y: 14.85}
   m_Constraint: 1
   m_ConstraintCount: 3
