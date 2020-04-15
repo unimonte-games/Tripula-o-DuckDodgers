@@ -7,6 +7,7 @@ public class Piece : MonoBehaviour
 {
     public int Color;
     public Sprite[] Colors;
+    public bool Black;
 
     private void Start()
     {

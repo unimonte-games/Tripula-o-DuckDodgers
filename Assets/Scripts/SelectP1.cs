@@ -30,7 +30,7 @@ public class SelectP1 : MonoBehaviour
         var player2 = selectedPiece[1];
         player1.transform.GetSiblingIndex();
         player2.transform.GetSiblingIndex();
-        if (player1.Color > 1 && player1.Color != player2.Color)
+        if (player1.Color > 1 && player1.Color != player2.Color && player2.Black == false)
         {
             player2.Color = player1.Color;
             player2.UpdateColor();

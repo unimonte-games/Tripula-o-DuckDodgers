@@ -15,9 +15,9 @@ public class Board : MonoBehaviour
     }
 
     int[,] pieces = new int[,] {
-            { 1, 2, 3 },
-            { 3, 1, 1 },
-            { 2, 3, 1 }
+            { 1, 2, 1 },
+            { 2, 4, 2 },
+            { 1, 2, 1 }
 };
     void Start()
     {
