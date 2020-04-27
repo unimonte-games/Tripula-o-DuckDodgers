@@ -298,16 +298,6 @@ MonoBehaviour:
   m_Script: {fileID: -73581967, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previewOnGUI: 1
-  enableGUILayout: 1
-  drawStateLabels: 1
-  enableStateLabelsInBuilds: 0
-  GUITextureStateLabels: 0
-  GUITextStateLabels: 0
-  filterLabelsWithDistance: 0
-  maxLabelDistance: 10
-  controlMouseCursor: 1
-  labelScale: 1
 --- !u!4 &1611903655
 Transform:
   m_ObjectHideFlags: 0
@@ -528,13 +518,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding:
     m_Left: 64
-    m_Right: 40
-    m_Top: 20
+    m_Right: 59
+    m_Top: 14
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 1
   m_StartCorner: 0
-  m_StartAxis: 1
-  m_CellSize: {x: 85, y: 85}
-  m_Spacing: {x: 37.1, y: 14.85}
+  m_StartAxis: 0
+  m_CellSize: {x: 80, y: 80}
+  m_Spacing: {x: -7.11, y: -8.4}
   m_Constraint: 1
-  m_ConstraintCount: 3
+  m_ConstraintCount: 5
