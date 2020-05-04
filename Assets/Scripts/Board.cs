@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Board : MonoBehaviour
 {
+    public static Board Instance;
     public GameObject[] prefabs;
     private GameObject InstantiateBlock(int index)
     {
@@ -14,12 +15,22 @@ public class Board : MonoBehaviour
         return instance;
     }
 
-    int[,] pieces = new int[,] {
+    public int[,] pieces = new int[,] {
             { 2, 1, 4, 1, 2 },
             { 2, 4, 4, 4, 2 },
             { 2, 4, 4, 4, 2 },
-            { 2, 1, 4, 1, 2 }
+            { 2, 1, 4, 1, 2 },
+            { 1, 1, 1, 1, 1 }
 };
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = GetComponent<Board>();
+        }
+    }
+
     void Start()
     {
         for (int i = 0; i < pieces.GetLength(0); i++)
