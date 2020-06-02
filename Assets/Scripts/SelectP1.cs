@@ -22,6 +22,10 @@ public class SelectP1 : MonoBehaviour
         {
             AttackPieces();
         }
+        if (Board.Instance.IsGameOver())
+        {
+            Debug.Log("Game Over");
+        }
     }
 
     private void AttackPieces()

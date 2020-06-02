@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Board : MonoBehaviour
 {
@@ -16,13 +17,11 @@ public class Board : MonoBehaviour
     }
 
     public int[,] pieces = new int[,] {
-            { 2, 1, 4, 1, 2 },
-            { 2, 4, 4, 4, 2 },
-            { 2, 4, 4, 4, 2 },
-            { 2, 1, 4, 1, 2 },
-            { 1, 1, 1, 1, 1 }
-};
-
+            { 2, 3, 2, 3},
+            { 3, 2, 3, 2},
+            { 2, 3, 2, 3},
+            { 3, 2, 3, 2}
+    };
     private void Awake()
     {
         if (Instance == null)
@@ -37,11 +36,33 @@ public class Board : MonoBehaviour
         {
             for (int j = 0; j < pieces.GetLength(1); j++)
             {
-               var obj = InstantiateBlock(pieces[i, j]);
-               var color = obj.GetComponent<Image>().color;
-               Debug.Log(color);
+                var obj = InstantiateBlock(pieces[i, j]);
+                var color = obj.GetComponent<Image>().color;
+                Debug.Log(color);
             }
         }
     }
 
+    public bool IsGameOver()
+    {
+        int Counter = 0;
+        foreach (Transform obj in transform)
+        {
+            if (obj.GetComponent<Piece>().Color > 1)
+            {
+                Counter++;
+            }
+        }
+        Debug.Log("Counter" + Counter);
+        return (Counter == 1);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Scene activeScene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(activeScene.name);
+        }
+    }
 }
