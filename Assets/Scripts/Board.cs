@@ -17,10 +17,11 @@ public class Board : MonoBehaviour
     }
 
     public int[,] pieces = new int[,] {
-            { 2, 3, 2, 3},
-            { 3, 2, 3, 2},
-            { 2, 3, 2, 3},
-            { 3, 2, 3, 2}
+            { 4, 3, 4, 3, 4},
+            { 3, 3, 4, 3, 3},
+            { 4, 4, 4, 4, 4},
+            { 3, 3, 4, 3, 3},
+            { 4, 3, 4, 3, 4},
     };
     private void Awake()
     {
